@@ -1,0 +1,19 @@
+GIT
+
+Git nos permite almacenar los cambios realizados en cada archivo en un servidor propio para eso. Toda la gestión de cambios 
+la realiza Git y solo debemos preocuparnos por crear un código que funcione, y no por quién lo cambió antes.
+Cada cambio que realices se registra en un historial y se puede ver y restaurar en cualquier momento.
+Con GIT, cada persona tiene su propio repositorio, pudiendo trabajar tranquilamente en él, incluso de manera offline.
+Sin embargo Git es uno de los más utilizados por unas características que, básica y reducidamente, permite que tengas una copia del proyecto o un repositorio en tu 
+computadora, puedas trabajar sobre ella y después se envía para otros repositorios. A esto se les llama repositorios distribuidos.
+No vamos a entrar mucho en detalle, pero esto permite que puedas trabajar offline, antes de comunicarte con otro servidor y que puedas enviar las modificaciones.
+
+Git Bash 
+Vamos a hacer siguiente, siguiente y acá el instalador nos presenta unas opciones bastante interesantes. Entre ellas, una que destaco es Git Bash. 
+Git Bash es una terminal que se nos instala para que nosotros podamos usar comandos de Linux dentro de Windows. 
+
+git init
+git init inicializa un repositorio en el directorio donde se ejecuta el comando. Desde este comando, Git podrá administrar los cambios realizados en los archivos.
+
+*git no distingue entre mayúsculas o minúsculas/ tampoco reconoce los espacios al parecer*
+
