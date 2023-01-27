@@ -1,0 +1,59 @@
+*GIT
+
+Qué son (y para qué sirven) los sistemas de control de versiones y cómo pueden ayudar a nuestro flujo de desarrollo
+
+    Nos ayudan a mantener un historial de cambios;
+    Nos ayudan a tener control sobre cada cambio en el código;
+    Nos ayudan a que un cambio de una persona no influya en el cambio realizado por otra;git status
+
+Git nos permite almacenar los cambios realizados en cada archivo en un servidor propio para eso. Toda la gestión de cambios 
+la realiza Git y solo debemos preocuparnos por crear un código que funcione, y no por quién lo cambió antes.
+Cada cambio que realices se registra en un historial y se puede ver y restaurar en cualquier momento.
+Con GIT, cada persona tiene su propio repositorio, pudiendo trabajar tranquilamente en él, incluso de manera offline.
+Sin embargo Git es uno de los más utilizados por unas características que, básica y reducidamente, permite que tengas una copia del proyecto o un repositorio en tu 
+computadora, puedas trabajar sobre ella y después se envía para otros repositorios. A esto se les llama repositorios distribuidos.
+No vamos a entrar mucho en detalle, pero esto permite que puedas trabajar offline, antes de comunicarte con otro servidor y que puedas enviar las modificaciones.
+
+*Git Bash 
+Vamos a hacer siguiente, siguiente y acá el instalador nos presenta unas opciones bastante interesantes. Entre ellas, una que destaco es Git Bash. 
+Git Bash es una terminal que se nos instala para que nosotros podamos usar comandos de Linux dentro de Windows. 
+
+*git init
+git init inicializa un repositorio en el directorio donde se ejecuta el comando. Desde este comando, Git podrá administrar los cambios realizados en los archivos.
+Para eso voy a utilizar el comando git init, damos enter y acá lo que hace este git init es decir: "Acá hay un repositorio".
+Con esto ya tenemos un repositorio inicializado.
+Y todas las modificaciones que realicemos en los archivos dentro de esta carpeta o repositorio, Git va a poder verlos, mostrar información como qué fue modificado,
+cuándo, quién y varias otras informaciones. Presten atención que cuando hice git init se agregó automáticamente una palabra luego del directorio, que esto de aquí
+significa que es una branch. Está en la branch master. 
+
+*git no distingue entre mayúsculas o minúsculas/ tampoco reconoce los espacios al parecer*
+
+*git status
+Ahora, ¿cómo sé que Git realmente está viendo mi carpeta y entendiendo las modificaciones en los archivos?
+Un comando que nos sirve para saber los cambios realizados y estado en el que están los archivos dentro del repositorio es git status, damos enter y
+acá vemos que comienza diciendo que está en la rama master, eso lo vamos a ver después. Dice que no hay commits aún. ¿Qué significa un commit? También lo vamos a ver
+después.
+
+*git add
+Entonces lo primero que necesitamos hacer para guardar una modificación de un archivo en Git, es hacer que Git monitoree los cambios de ese archivo.
+Como no está siendo monitoreado ese archivo que es aquí el index.html, necesitamos usar el comando git add, espacio, y el nombre del archivo, index.html en este caso.
+Pero, ¿y si tuviera varios archivos? ¿Tengo que ir poniendo cada uno de los nombres de mis archivos? No. Con colocar git add punto, lo que hacemos es agregar todos los
+archivos que están dentro de esa carpeta y hacemos que Git monitoree todo esos archivos.
+
+¿Y si no queremos monitorear más ese archivo, este index.html? Lo que podemos hacer es usar este comando de acá: “git rm --cached" espacio, el nombre del archivo.
+Y con eso Git dejaría de monitorear ese archivo index.html.
+
+*git commit -m "mensaje corto y descriptivo"
+Lo que hicimos es decirle a Git que monitoree ese archivo pero los cambios aún no han sido guardados.
+Entonces podemos crear un checkpoint o un punto dentro de la historia de ese archivo para decir: "Acá ocurrió alguna cosa en este archivo, alguna modificación."
+Y este punto se llama commit. En ese commit vamos a colocar nuestro archivo y un mensaje indicando lo que se modificó en ese archivo.
+Entonces, podemos hacer git commit, espacio. ¿Y git commit es suficiente para commitear, para guardar un archivo? No. Lo que necesitamos hacer es agregar un parámetro
+que es el -m, espacio y vamos a agregar un mensaje. Ese mensaje se pone entre comillas. ¿Pero qué mensaje podemos colocar acá?
+Es buena práctica poner un mensaje descriptivo pero que no sea grande. No vamos a escribir una documentación del archivo acá.
+
+*git config --global user.email "you@example.com"
+Pueden colocar el email de ustedes
+*git config --global user.name "Your Name"
+Y acá su nombre.
+ESTOS DOS DATOS son necesarios para crear usuario en gitadd
+
